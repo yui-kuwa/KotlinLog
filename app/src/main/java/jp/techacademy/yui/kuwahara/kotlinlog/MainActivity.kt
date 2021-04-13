@@ -137,18 +137,17 @@ class MainActivity : AppCompatActivity() {
         Log.d("kotlintest", "犬の名前は" + bigdog.name + "です。")
         Log.d("kotlintest", "犬の年齢は" + bigdog.age + "歳です。")*/
 
-        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+        //val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
 
-        val human1 = Human("由衣",22)
-        val human2 = Human("桑原",22)
-
-        human2.hobby = "ダンス"
+        val human1 = Human("由衣",22,"ダンス")
+        val human2 = Human("桑原",22,"ウクレレ")
 
         human1.say()
         human2.say()
 
+        human1.think()
         human2.think()
 
-        dog.move()
+        //dog.move()
     }
 }

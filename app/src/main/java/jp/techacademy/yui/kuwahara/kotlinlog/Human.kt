@@ -3,10 +3,8 @@ import android.util.Log
 
 open class Human: Animal ,Thinkable{
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int): super(name, age) {
+    constructor(name: String, age: Int,hobby:String): super(name, age, hobby) {
     }
-
-    var hobby :String = ""
 
     // Animalクラスのメソッドをオーバーライド
     override fun say() {
